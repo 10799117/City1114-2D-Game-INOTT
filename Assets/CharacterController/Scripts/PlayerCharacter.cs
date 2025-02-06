@@ -2,7 +2,7 @@
 
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
+
 
 [RequireComponent(typeof(CharacterController), typeof(PlayerInput))]
 public class PlayerCharacter : MonoBehaviour
@@ -12,7 +12,7 @@ public class PlayerCharacter : MonoBehaviour
     //Player input actions
     private PlayerInput playerInput => this.GetComponent<PlayerInput>();
     //Current direction input
-    private Vector3 currentDirectionInput;
+    private Vector2 currentDirectionInput;
 
 	private void Update()
 	{
